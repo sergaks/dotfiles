@@ -85,7 +85,7 @@
 
 	# Use custom `.gitignore` and `.gitattributes`
 	excludesfile = ~/.gitignore
-	attributesfile = ~/.gitattributes
+#	attributesfile = ~/.gitattributes
 
 	# Treat spaces before tabs and all kinds of trailing whitespace as an error
 	# [default] trailing-space: looks for spaces at the end of a line
@@ -100,6 +100,9 @@
 	# http://michael-kuehnel.de/git/2014/11/21/git-mac-osx-and-german-umlaute.html
 	precomposeunicode = false
 
+    # Automatically correct incidentally added files with CRLF line separators
+    # https://git-scm.com/book/en/v2/Customizing-Git-Git-Configuration
+    autocrlf = input
 [color]
 
 	# Use colors in Git commands that are capable of colored output when
@@ -125,18 +128,13 @@
 	changed = green
 	untracked = cyan
 
-[commit]
-
-	# https://help.github.com/articles/signing-commits-using-gpg/
-	gpgsign = true
-
-[diff]
-
-	# Detect copies as well as renames
-	renames = copies
-	# Enable an experimental heuristic that shifts the hunk boundary in an
-	# attempt to make the resulting patch easier to read.
-	indentHeuristic = true
+#[diff]
+#
+#	# Detect copies as well as renames
+#	renames = copies
+#	# Enable an experimental heuristic that shifts the hunk boundary in an
+#	# attempt to make the resulting patch easier to read.
+#	indentHeuristic = true
 
 [diff "bin"]
 
@@ -148,19 +146,21 @@
 	# Automatically correct and execute mistyped commands
 	autocorrect = 1
 
-[merge]
-
-	# Include summaries of merged commits in newly created merge commit messages
-	log = true
+#[merge]
+#
+#	# Include summaries of merged commits in newly created : commit messages
+#	log = true
 
 [push]
+#
+#	# Use the Git 1.x.x default to avoid errors on machines with old Git
+#	# installations. To use `simple` instead, add this to your `~/.extra` file:
+#	# `git config --global push.default simple`. See http://git.io/mMah-w.
+#	default = matching
+#	# Make `git push` push relevant annotated tags when pushing branches out.
+#	followTags = true
+	default = current
 
-	# Use the Git 1.x.x default to avoid errors on machines with old Git
-	# installations. To use `simple` instead, add this to your `~/.extra` file:
-	# `git config --global push.default simple`. See http://git.io/mMah-w.
-	default = matching
-	# Make `git push` push relevant annotated tags when pushing branches out.
-	followTags = true
 
 # URL shorthands
 
@@ -183,3 +183,8 @@
 [url "git://gist.github.com/"]
 
 	insteadOf = "gist:"
+
+[user]
+	name = Sergei Aksenenkoy
+	# force specify email for each git repository
+    useConfigOnly = true
