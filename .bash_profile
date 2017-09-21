@@ -1,5 +1,8 @@
 # Add `~/bin` to the `$PATH`
-#export PATH="$HOME/bin:$PATH";
+# export PATH="$HOME/bin:$PATH";
+
+# Add hybris scripts to the PATH
+export PATH="$PATH:~/dev/branches/sergaks/y-scripts"
 
 # Load the shell dotfiles, and then some:
 # * ~/.path can be used to extend `$PATH`.
