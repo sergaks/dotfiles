@@ -185,6 +185,6 @@
 	insteadOf = "gist:"
 
 [user]
-	name = Sergei Aksenenkoy
+	name = Sergei Aksenenko
 	# force specify email for each git repository
     useConfigOnly = true

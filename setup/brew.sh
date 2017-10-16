@@ -23,7 +23,7 @@ brew install gnu-sed --with-default-names
 # running `chsh`.
 brew install bash
 brew tap homebrew/versions
-brew install bash-completion2
+brew install bash-completion
 
 # Switch to using brew-installed bash as default shell
 if ! fgrep -q '/usr/local/bin/bash' /etc/shells; then
@@ -47,6 +47,7 @@ brew install gist
 brew install htop-osx
 brew install git
 brew install maven
+brew install jenv
 
 # Install all brew cask applications
 brew cask install skype

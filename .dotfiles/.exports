@@ -31,3 +31,6 @@ export LESS_TERMCAP_md="${yellow}";
 
 # Set java home
 export JAVA_HOME=$(/usr/libexec/java_home)
+
+# Set jrebel home"
+export JREBEL_HOME="/Users/sergei_aksenenko/dev/bin/jrebel"
