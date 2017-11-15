@@ -30,7 +30,7 @@ export LESS_TERMCAP_md="${yellow}";
 #export MANPAGER='less -X';
 
 # Set java home
-export JAVA_HOME=$(/usr/libexec/java_home)
+export JAVA_HOME=$HOME/.jenv/versions/`jenv version-name`
 
 # Set jrebel home"
 export JREBEL_HOME="/Users/sergei_aksenenko/dev/bin/jrebel"
