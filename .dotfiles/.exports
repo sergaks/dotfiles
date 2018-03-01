@@ -36,5 +36,5 @@ export JAVA_HOME=$HOME/.jenv/versions/`jenv version-name`
 export JREBEL_HOME="/Users/sergei_aksenenko/dev/bin/jrebel"
 
 # GO lang configuration
-export GOPATH="/Users/sergei_aksenenko/dev/sergaks/go/"
+export GOPATH="/Users/sergei_aksenenko/dev/sergaks/go"
 export PATH="$PATH:$GOPATH/bin"
