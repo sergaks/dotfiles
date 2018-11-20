@@ -38,3 +38,12 @@ export JREBEL_HOME="/Users/sergei_aksenenko/dev/bin/jrebel"
 # GO lang configuration
 export GOPATH="/Users/sergei_aksenenko/dev/sergaks/go"
 export PATH="$PATH:$GOPATH/bin"
+
+export PATH="/usr/local/opt/python/libexec/bin:${PATH}"
+# export PATH="/usr/local/opt/python@2/libexec/bin:$PATH"
+# export PATH="/usr/local/Frameworks/Python.framework/Versions/Current/bin/:$PATH"
+
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
